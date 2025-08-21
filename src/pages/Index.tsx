@@ -41,11 +41,24 @@ const Index = () => {
           </div>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center animate-in slide-in-from-bottom duration-1000 delay-700">
-            <HeroButton variant="hero" size="xl">
+            <HeroButton 
+              variant="hero" 
+              size="xl"
+              onClick={() => {
+                const servicesSection = document.getElementById('services');
+                servicesSection?.scrollIntoView({ behavior: 'smooth' });
+              }}
+            >
               Nossos Serviços
             </HeroButton>
-            <HeroButton variant="hero-outline" size="xl">
-              Fale Conosco
+            <HeroButton 
+              variant="hero-outline" 
+              size="xl"
+              asChild
+            >
+              <a href="https://wa.me/+5531973173158" target="_blank" rel="noopener noreferrer">
+                Fale Conosco
+              </a>
             </HeroButton>
           </div>
         </div>
@@ -195,7 +208,7 @@ const Index = () => {
       </section>
 
       {/* Services Section */}
-      <section className="py-20 bg-background">
+      <section id="services" className="py-20 bg-background">
         <div className="container mx-auto px-6">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold mb-6">Nossos Serviços</h2>
@@ -325,8 +338,10 @@ const Index = () => {
           <p className="text-xl mb-8 max-w-2xl mx-auto">
             Entre em contato conosco e descubra como podemos transformar a tecnologia da sua empresa
           </p>
-          <HeroButton variant="hero-outline" size="xl">
-            Solicitar Orçamento
+          <HeroButton variant="hero-outline" size="xl" asChild>
+            <a href="https://wa.me/+5531973173158" target="_blank" rel="noopener noreferrer">
+              Solicitar Orçamento
+            </a>
           </HeroButton>
         </div>
       </section>
