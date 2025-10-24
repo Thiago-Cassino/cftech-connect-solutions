@@ -8,7 +8,9 @@ O EnemLab é m sistema pensado para auxiliar estudantes na preparação para o E
 - Thiago Silva Cassino - 12400920
 - Bernardo Coelho Simões - 12302279
 - Leonardo Augusto Santana - 12301310
-- Nome do Aluno 4 - Matrícula
+- Davi dos Santos Brito Sena - 2240345
+- Gabriel Guerra Pimentel Liboredo Vargas - 12400351
+- Felipe Pedroso Belloni - 12400521 
 
 ## Estrutura de Diretórios
 
