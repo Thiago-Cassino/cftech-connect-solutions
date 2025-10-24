@@ -6,8 +6,8 @@ O EnemLab é m sistema pensado para auxiliar estudantes na preparação para o E
 ## Integrantes
 <!-- Liste todos os integrantes do grupo no formato Nome - Matrícula -->
 - Thiago Silva Cassino - 12400920
-- Nome do Aluno 2 - Matrícula
-- Nome do Aluno 3 - Matrícula
+- Bernardo Coelho Simões - 12302279
+- Leonardo Augusto Santana - 12301310
 - Nome do Aluno 4 - Matrícula
 
 ## Estrutura de Diretórios
@@ -16,7 +16,7 @@ O EnemLab é m sistema pensado para auxiliar estudantes na preparação para o E
 projeto/
 ├── src/               # Código-fonte principal
 ├── docs/              # Documentação
-├── tests/             # Testes automatizados
+├── tests/             # Testes automatizados 
 ├── README.md          # Arquivo de descrição do projeto
 └── requirements.txt   # Dependências do projeto (se houver)
 ```
@@ -24,38 +24,56 @@ projeto/
 O preojeto é feito em blazor e será um site web para pc.
 
 ### 1. Pré-requisitos
-<!-- Liste os requisitos necessários, como linguagens, frameworks, bibliotecas, banco de dados, etc. -->
-- Linguagem/Versão utilizada
-- Dependências necessárias
-- Banco de dados
+
+  - Linguagem/Versão utilizada
+  - C# (versão 10 ou superior)
+  - Blazor WebAssembly (.NET 8)
+
+  - Dependências necessárias
+  - SDK do .NET 8 instalado
+  - Visual Studio 2022 (ou VS Code com extensão C#)
+  - Pacotes NuGet:
+    - Microsoft.AspNetCore.Components.Web
+    - Microsoft.EntityFrameworkCore
+    - Microsoft.EntityFrameworkCore.SqlServer
+    - Microsoft.EntityFrameworkCore.Tools
+
+  - Banco de dados
+  - SQL Server (LocalDB ou versão completa)
+  - Ferramenta recomendada: SQL Server Management Studio (SSMS)
 
 ### 2. Instalação
-<!-- Explique como preparar o ambiente -->
+
 ```bash
 # Clone o repositório
-git clone https://github.com/usuario/repositorio.git
+git clone https://github.com/yBelloni/PitchEnemLabWebApp
 
 # Acesse a pasta do projeto
-cd repositorio
+cd EnemLab
 
-# Instale as dependências (se houver)
-comando-de-instalacao
-```
+# Restaure as dependências do projeto
+dotnet restore
+
+# Crie o banco de dados local
+dotnet ef database update
+
+# Execute o projeto
+dotnet run
 
 ### 3. Execução
-<!-- Explique como rodar o projeto -->
+
 ```bash
 # Execute o projeto
-comando-de-execucao
-```
+dotnet run
+
+# Após a execução, acesse no navegador:
+# https://localhost:5001 ou http://localhost:5000
 
 ### 4. Acesso
 <!-- Informe como acessar a aplicação (por exemplo, URL local ou credenciais de teste) -->
-- URL local: http://localhost:3000  
-- Usuário padrão: admin  
-- Senha padrão: admin123  
+
+- **URL local:** http://localhost:5000 ou https://localhost:5001
+- **Usuário padrão:** admin
+- **Senha padrão:** admin123
 
 ---
-
-## Observações
-<!-- Coloque aqui informações adicionais, como problemas conhecidos, melhorias futuras ou instruções extras -->
