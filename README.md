@@ -11,15 +11,17 @@ O EnemLab é m sistema pensado para auxiliar estudantes na preparação para o E
 - Nome do Aluno 4 - Matrícula
 
 ## Estrutura de Diretórios
-<!-- Mostre a estrutura básica do projeto -->
-```
-projeto/
-├── src/               # Código-fonte principal
-├── docs/              # Documentação
-├── tests/             # Testes automatizados 
-├── README.md          # Arquivo de descrição do projeto
-└── requirements.txt   # Dependências do projeto (se houver)
-```
+
+site-questoes-enem/
+├── Client/                 # Projeto Blazor WebAssembly (frontend)
+├── Server/                 # API e regras de negócio (backend)
+├── Shared/                 # Modelos e classes compartilhadas
+├── wwwroot/                # Arquivos estáticos (CSS, JS, imagens)
+├── Data/                   # Contexto e configurações do banco de dados
+├── Pages/                  # Páginas principais do site (Home, Questões, Login, etc.)
+├── Components/             # Componentes reutilizáveis (CardQuestao, FiltroMateria, etc.)
+├── README.md               # Arquivo de documentação do projeto
+└── appsettings.json        # Configurações gerais da aplicação
 
 O preojeto é feito em blazor e será um site web para pc.
 
@@ -44,7 +46,7 @@ O preojeto é feito em blazor e será um site web para pc.
 
 ### 2. Instalação
 
-```bash
+bash
 # Clone o repositório
 git clone https://github.com/yBelloni/PitchEnemLabWebApp
 
@@ -62,7 +64,7 @@ dotnet run
 
 ### 3. Execução
 
-```bash
+bash
 # Execute o projeto
 dotnet run
 
@@ -70,7 +72,6 @@ dotnet run
 # https://localhost:5001 ou http://localhost:5000
 
 ### 4. Acesso
-<!-- Informe como acessar a aplicação (por exemplo, URL local ou credenciais de teste) -->
 
 - **URL local:** http://localhost:5000 ou https://localhost:5001
 - **Usuário padrão:** admin
